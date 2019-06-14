@@ -5,11 +5,14 @@ package principal;
  * @author genilton
  */
 
+// Classe Aprendiz herdando de Funcionario
 public class Aprendiz extends Funcionario
 {
+    // Criando os atributos
     private int horas;
     private double valorHora;
 
+    // Criando os construtores da classe
     public Aprendiz() { }
 
     public Aprendiz(String nome, String cpf, String telefone, Endereco endereco, Horario horarioServico, boolean ponto, int horas, double valorHora) 
@@ -19,6 +22,7 @@ public class Aprendiz extends Funcionario
         this.valorHora = valorHora;
     }
 
+    // Métodos Get/Set
     public int getHoras() 
     {
         return horas;
@@ -39,6 +43,7 @@ public class Aprendiz extends Funcionario
         this.valorHora = valorHora;
     }
 
+    // Retornando todos os dados através do método toString
     @Override
     public String toString() 
     {

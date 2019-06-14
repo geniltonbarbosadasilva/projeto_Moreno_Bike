@@ -7,9 +7,11 @@ package principal;
 
 public class Horario 
 {
+    // Criando os atributos
     private int horaEntrada;
     private int horaSaida;
 
+    // Criandos os construtores da classe
     public Horario() { }
 
     public Horario(int horaEntrada, int horaSaida) 
@@ -18,6 +20,7 @@ public class Horario
         this.horaSaida = horaSaida;
     }
 
+    // métodos Get/Set 
     public int getHoraEntrada() 
     {
         return horaEntrada;
@@ -38,6 +41,7 @@ public class Horario
         this.horaSaida = horaSaida;
     }
 
+    // // Retornando todos os dados através do método toString
     @Override
     public String toString() {
         return "Horario: " + "Entrada as " + horaEntrada + ", Saida as " + horaSaida;

@@ -7,14 +7,17 @@ import java.util.Arrays;
  * @author genilton
  */
 
+// Classe Manutenção relacionada com a Interface Serviço
 public class Manutencao implements Servico
 {
+    // Criando os atributos
     private String desc;
     private String notaFiscal;
     private double preco;
     private double []acressimo;
     private Bicicleta bicicleta;
 
+    // Criando os construtores da classe
     public Manutencao() { }
 
     public Manutencao(String desc, String notaFiscal, double preco, double[] acressimo, Bicicleta bicicleta) 
@@ -26,6 +29,7 @@ public class Manutencao implements Servico
         this.bicicleta = bicicleta;
     }
 
+    // Métodos Get/Set
     public String getDesc() 
     {
         return desc;
@@ -76,6 +80,7 @@ public class Manutencao implements Servico
         this.bicicleta = bicicleta;
     }
 
+    
     @Override
     public String toString() {
         return "Manutencao " + desc + ", Nota Fiscal: " + notaFiscal + ", preço: " + this.calculaPreco() + ", bicicleta=" + bicicleta;

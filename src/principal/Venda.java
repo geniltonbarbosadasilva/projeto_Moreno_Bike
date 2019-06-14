@@ -7,11 +7,14 @@ import java.util.Arrays;
  * @author genilton
  */
 
+// Classe Venda relacionada com a Interface Serviço
 public class Venda implements Servico
 {
+    // Criando os atributos
     private String notaFiscal;
     private Produto []produto;
 
+    // Criando os Construtores da classe
     public Venda() { }
     
     public Venda(String notaFiscal, Produto[] produto) 
@@ -20,6 +23,7 @@ public class Venda implements Servico
         this.produto = produto;
     }
 
+    // Métodos Get/Set
     public String getNotaFiscal() 
     {
         return notaFiscal;

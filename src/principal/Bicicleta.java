@@ -9,10 +9,12 @@ import java.util.Date;
 
 public class Bicicleta 
 {
+    // Criando os atributos
     private Cliente dono;
     private Date dataEntrada;
     private Date dataSaida;
 
+    // Criando os construtores da classe
     public Bicicleta() { }
 
     public Bicicleta(Cliente dono, Date dataEntrada) 
@@ -22,6 +24,7 @@ public class Bicicleta
         this.dataSaida = null;
     }
 
+    // Métodos Get/Set
     public Cliente getDono() 
     {
         return dono;

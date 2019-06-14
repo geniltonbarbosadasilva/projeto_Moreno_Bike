@@ -5,11 +5,14 @@ package principal;
  * @author genilton
  */
 
+// Classe abstrata Funcionario herdando da Classe Pessoa
 public abstract class Funcionario extends Pessoa
 {
+    // Criando os atributos
     protected Horario horarioServico;
     protected boolean ponto;
 
+    // Criando os construtores da classe
     public Funcionario() { }
 
     public Funcionario(String nome, String cpf, String telefone, Endereco endereco, Horario horarioServico, boolean ponto) 
@@ -19,6 +22,7 @@ public abstract class Funcionario extends Pessoa
         this.ponto = ponto;
     }
 
+    // Métodos Get/Set
     public Horario getHorarioServico() 
     {
         return horarioServico;
@@ -39,6 +43,7 @@ public abstract class Funcionario extends Pessoa
         this.ponto = ponto;
     }
 
+    // Retornando todos os dados através do método toString
     @Override
     public String toString() 
     {

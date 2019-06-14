@@ -5,13 +5,17 @@ package principal;
  * @author genilton
  */
 
+// Classe abstrata Pessoa
 public abstract class Pessoa 
 {
+    
+    // Criando os atributos
     protected String nome;
     protected String cpf; 
     protected String telefone;
     protected Endereco endereco;    
     
+    // Criando os construtores da classe
     public Pessoa() { }
 
     public Pessoa(String nome, String cpf, String telefone, Endereco endereco) 
@@ -22,6 +26,7 @@ public abstract class Pessoa
         this.endereco = endereco;
     }
 
+    // métodos Get/Set
     public String getNome() 
     {
         return nome;
@@ -62,6 +67,7 @@ public abstract class Pessoa
         this.endereco = endereco;
     }
 
+    // Retornando todos os dados através do método toString
     @Override
     public String toString() 
     {

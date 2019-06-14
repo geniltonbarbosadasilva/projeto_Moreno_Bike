@@ -17,7 +17,7 @@ public class Main
         int cpf;
         
         cpf = in.nextInt();
-        System.out.println(cpf);
+        System.out.println(cpf);       
     }
     
 }

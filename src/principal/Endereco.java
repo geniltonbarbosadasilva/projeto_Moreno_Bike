@@ -7,12 +7,14 @@ package principal;
 
 public class Endereco 
 {
+    // Criando os atributos
     private String rua;
     private String bairro;
     private String cidade;
     private String estado;
     private int numero;
 
+    // Criando os construtores da classe
     public Endereco() { }
 
     public Endereco(String rua, int numero, String bairro, String cidade, String estado) 
@@ -24,6 +26,7 @@ public class Endereco
         this.numero = numero;
     }
 
+    // Métodos Get/Set
     public String getRua() 
     {
         return rua;
@@ -74,6 +77,7 @@ public class Endereco
         this.numero = numero;
     }
 
+    // Retornando todos os dados através do método toString
     @Override
     public String toString() {
         return "Endereço: Rua " + rua + ", Numero " + numero + ", Bairro " + bairro + ", Cidade " + cidade + ", Estado " + estado;

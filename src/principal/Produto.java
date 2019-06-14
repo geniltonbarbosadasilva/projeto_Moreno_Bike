@@ -7,10 +7,12 @@ package principal;
 
 public class Produto 
 {
+    // Criando os atributos
     private static int qtdEstoque;
     private String nome;
     private double preco;
 
+    // Criando os Construtores da classe
     public Produto() { }
 
     public Produto(String nome, double preco) 
@@ -19,6 +21,7 @@ public class Produto
         this.preco = preco;
     }
 
+    // Métodos Get/Set
     public static int getQtdEstoque() 
     {
         return qtdEstoque;

@@ -1,9 +1,12 @@
 package principal;
 
+// Classe FuncMensalista herdando da Classe Funcionario
 public class FuncMensalista extends Funcionario
-{
+{    
+    //Criando os atributos
     private double salario;
 
+    // Criando os construtores da classe
     public FuncMensalista() { }
 
     public FuncMensalista(String nome, String cpf, String telefone, Endereco endereco, Horario horarioServico, boolean ponto, double salario) 
@@ -12,6 +15,7 @@ public class FuncMensalista extends Funcionario
         this.salario = salario;
     }
 
+    // Métodos Get/Set
     public double getSalario() 
     {
         return salario;
@@ -22,6 +26,7 @@ public class FuncMensalista extends Funcionario
         this.salario = salario;
     }
 
+    // Retornando todos os dados através do método toString
     @Override
     public String toString() 
     {
